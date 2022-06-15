@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+.colors{
+    color: hsl(322, 100%, 66%)
+    hsl(193, 100%, 96%)
+    hsl(192, 100%, 9%)
+    hsl(208, 11%, 55%)
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+body *{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+header img{
+    width: 120px;
+}
+
+h2, h3{
+    line-height: 1.5;
+    color: hsl(192, 100%, 9%);
+}
+p{
+    color: hsl(208, 11%, 55%);
+    font-size: 15px;
+}
+h3{
+    font-size: 25px;
+}
+h2, h3, a, button{
+    font-family: 'Poppins', sans-serif;
+}
+h2, p{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+
+.hero{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-image: url('./assets/bg-hero-mobile.svg');
+    background-color: hsl(193, 100%, 96%);
+    min-height: 100vh;
+    padding-top: 130px;
+}
+.hero div{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    /* gap: 35px; */
+    
+    margin: 0;
+    height: 100%;
+    width: 350px;
+}
+img{
+    width: 290px;
+}
+.btn{
+    background: hsl(322, 100%, 66%);
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    color: hsl(193, 100%, 96%);
+    box-shadow: 0px 0px 10px 10px;
+}
+.white-btn{
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    width: 100px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    box-shadow: 0px 0px 3px 0px;
+}
+
+
+
+main {
+    display: grid;
+    justify-items: center;
+    gap: 50px;
+    padding: 60px 20px;
+}
+
+.card{
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    width: 330px;
+    padding: 40px 20px;
+    border: 1px solid hsl(208, 11%, 55%);
+    border-radius: 20px;
+    box-shadow: 0 0px 15px 3px hsl(208, 9%, 66%);
+}
+.card div{
+    padding-top: 20px;
+}
+main section img{
+    height: 250px;
+}
+
+.community{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: white;
+    top: 80px;
+    padding: 40px 0;
+    width: 350px;
+    height: 190px;
+    align-self: center;
+    border: 1px solid hsl(208, 11%, 55%);
+    border-radius: 20px;
+    box-shadow: 0 0px 10px 1px hsl(208, 9%, 66%);
+}
+.community div{
+    display: grid;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+.community h3{
+    font-size: 18px;
+}
+
+
+footer *{
+    color: white;
+}
+footer{
+    display: grid;
+    gap: 30px;
+    background-color: hsl(192, 100%, 9%);
+    padding: 150px 12px 40px 12px;
+}
+footer img{
+    width: 190px;
+}
+footer div{
+    display: flex;
+    align-items: start;
+    width: 350px;
+}
+footer div p{
+    margin: 0;
+    line-height: 2;
+}
+footer div img{
+    margin-right: 30px;
+    margin-top: 10px;
+    width: 20px;
+    height: 15px;
+}
+.links{
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-evenly;
+}
+.socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 150px;
+    justify-items: center;
+    justify-self: center;
+}
+.socials a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+footer > p{
+    text-align: center;
+}
+/* ************************MOBILE VIEW******************* */
