@@ -52,35 +52,24 @@ a{
 }
 
 
+.hero-background{
+    background-color: hsl(193, 100%, 96%);
+}
 .hero{
     display: grid;
+    min-height: 100vh;
     justify-items: center;
     align-items: center;
-    background-image: url('./assets/bg-hero-mobile.svg');
-    background-color: hsl(193, 100%, 96%);
-    min-height: 100vh;
-    padding-top: 130px;
 }
 .hero div{
     display: grid;
-    justify-items: center;
-    text-align: center;
-    /* gap: 35px; */
-    
-    margin: 0;
-    height: 100%;
-    width: 350px;
-}
-img{
-    width: 290px;
 }
 .btn{
     background: hsl(322, 100%, 66%);
     height: 40px;
-    width: 200px;
     border: none;
-    border-radius: 20px;
     color: hsl(193, 100%, 96%);
+    border-radius: 20px;
     box-shadow: 0px 0px 10px 10px;
 }
 .white-btn{
@@ -105,30 +94,17 @@ main {
 
 .card{
     display: grid;
-    gap: 20px;
-    text-align: center;
-    width: 330px;
-    padding: 40px 20px;
     border: 1px solid hsl(208, 11%, 55%);
     border-radius: 20px;
     box-shadow: 0 0px 15px 3px hsl(208, 9%, 66%);
 }
-.card div{
-    padding-top: 20px;
-}
-main section img{
-    height: 250px;
-}
+
 
 .community{
     display: flex;
     position: relative;
     justify-content: center;
     background-color: white;
-    top: 80px;
-    padding: 40px 0;
-    width: 350px;
-    height: 190px;
     align-self: center;
     border: 1px solid hsl(208, 11%, 55%);
     border-radius: 20px;
@@ -140,9 +116,6 @@ main section img{
     justify-items: center;
     align-items: center;
 }
-.community h3{
-    font-size: 18px;
-}
 
 
 footer *{
@@ -152,37 +125,37 @@ footer{
     display: grid;
     gap: 30px;
     background-color: hsl(192, 100%, 9%);
-    padding: 150px 12px 40px 12px;
 }
 footer img{
     width: 190px;
 }
-footer div{
+#location{
+    margin-right: 40px;
+    width: 25px;
+    height: 20px;
+}
+.footer-content div div{
     display: flex;
     align-items: start;
-    width: 350px;
 }
-footer div p{
+.footer-content div div p{
     margin: 0;
     line-height: 2;
 }
-footer div img{
+.footer-content div div img{
     margin-right: 30px;
     margin-top: 10px;
     width: 20px;
     height: 15px;
 }
-.links{
-    flex-direction: column;
-    height: 300px;
-    justify-content: space-evenly;
-}
+
 .socials{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
     width: 150px;
     justify-items: center;
-    justify-self: center;
+    align-self: center;
 }
 .socials a{
     display: flex;
@@ -193,7 +166,147 @@ footer div img{
     width: 35px;
     height: 35px;
 }
-footer > p{
-    text-align: center;
-}
+
+
+
+
+
 /* ************************MOBILE VIEW******************* */
+@media (min-width: 100px) and (max-width: 550px){
+    img{
+        width: 290px;
+    }
+    .hero-background{
+        background-image: url('./assets/bg-hero-mobile.svg');
+    }
+    .hero{
+        padding-top: 100px;
+    }
+    .hero div{
+        justify-items: center;
+        text-align: center;
+        gap: 30px;
+        width: 350px;
+    }
+    .btn{
+        width: 200px;
+    }
+    .card{
+        gap: 20px;
+        text-align: center;
+        width: 330px;
+        padding: 40px 20px;
+    }
+    .card div{
+        padding-top: 20px;
+    }
+    .card img{
+        height: 250px;
+    }
+    .community{
+        top: 80px;
+        padding: 35px 0;
+        width: 350px;
+        height: 190px;
+    }
+    .community h3{
+        font-size: 18px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-evenly;
+        padding: 30px 0;
+    }
+    footer{
+        padding: 150px 12px 40px 12px;
+    }
+    footer div{
+        width: 350px;
+    }
+    footer > p{
+        text-align: center;
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* ***********************DESKTOP VIEW******************* */
+
+@media (min-width: 600px) and (max-width: 1440px){
+    .hero-background{
+        display: flex;
+        justify-content: center;
+        background-image: url('./assets/bg-hero-desktop.svg');
+    }
+    .hero{
+        align-self: center;
+        grid-template-columns: 500px 600px;
+        gap: 40px;
+        justify-items: center;
+    }
+    .hero div{
+        height: 300px;
+    }
+    .hero img{
+        width: 600px;
+    }
+    .hero div h2{
+        font-size: 40px;
+    }
+    .card{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        width: 1100px;
+        gap: 50px;
+        padding: 50px 80px;
+    }
+    .card img{
+        width: 400px;
+    }
+    .card div h3{
+        font-size: 30px;
+    }
+    .card:nth-of-type(odd) img{
+        grid-column: 2/3;
+    }
+    .card:nth-of-type(odd) div{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .community{
+        top: 100px;
+        padding: 50px 0;
+        width: 700px;
+    }
+    .btn{
+        width: 300px;
+    }
+    footer{
+        padding: 150px 70px 40px 70px;
+    }
+    footer > p{
+        text-align: end;
+    }
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        justify-items: center;
+        align-items: baseline;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .links a{
+        padding: 10px;
+    }
+    .socials{
+        align-self: start;
+    }
+}
