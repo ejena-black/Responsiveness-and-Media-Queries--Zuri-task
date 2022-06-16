@@ -73,6 +73,9 @@ a{
     border-radius: 20px;
     box-shadow: 0px 0px 10px 10px;
 }
+.btn:active{
+    background-color: hsl(322, 51%, 69%);
+}
 .white-btn{
     background-color: white;
     color: hsl(192, 100%, 9%);
@@ -82,6 +85,9 @@ a{
     border-radius: 20px;
     font-size: 14px;
     box-shadow: 0px 0px 3px 0px;
+}
+.white-btn:active{
+    color: rgb(186, 186, 186);
 }
 
 
@@ -132,9 +138,12 @@ footer img{
     width: 190px;
 }
 #location{
-    margin-right: 40px;
+    margin-right: 35px;
     width: 25px;
     height: 20px;
+}
+.links a:active{
+    text-decoration: underline;
 }
 .footer-content div div{
     display: flex;
@@ -145,12 +154,11 @@ footer img{
     line-height: 2;
 }
 .footer-content div div img{
-    margin-right: 30px;
+    margin-right: 25px;
     margin-top: 10px;
     width: 20px;
     height: 15px;
 }
-
 .socials{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -159,7 +167,7 @@ footer img{
     justify-items: center;
     align-self: center;
 }
-.socials a{
+.socials a i{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,6 +175,10 @@ footer img{
     border-radius: 50%;
     width: 35px;
     height: 35px;
+}
+.socials a i:active {
+    border-color: hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
 }
 
 
